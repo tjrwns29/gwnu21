@@ -6,59 +6,114 @@
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- CSS -->
-  <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/b7e97aa5c8.js" crossorigin="anonymous"></script>
   <title>GWNU</title>
 </head>
 <body>
-  <!-- 현재 시각 표시 -->
-  <div class="nowTime"><span>0000년 00월 00일 00 : 00 : 00</span></div>
-  <header>
-    <div class="mainTitle"><a href="./index.html">GWNU</a></div>
-    <div class="sub">
-      <div class="subTitle">Mechanical Engineering</div>
-      <div class="ssubTitle">20211562 오석준</div>
+  <!-- header -->
+  <div class="header">
+    <!-- now Time -->
+    <div class="nowTime">
+      <span id="clock">0000년 00월 00일 00 : 00 : 00</span>
     </div>
-  </header>
-  <div id="wrapper">
-    <main>
-      <!-- 사이드바 -->
-      <nav>
-        <button>
-          <span class="sideBarBtn">
-            <i class="fa-solid fa-bars"></i>
-          </span>
-        </button>
-      </nav>
-      <!-- 메인 내용 -->
-      <article>
-        <div class="mainCon">주요 내용들</div>
-        <div class="mainCon">주요 내용들</div>
-        <div class="mainCon">주요 내용들</div>
-        <div class="mainCon">주요 내용들</div>
-        <div class="mainCon">주요 내용들</div>
-        <div class="mainCon">주요 내용들</div>
-        <div class="mainCon">주요 내용들</div>
-      </article>
-      <!-- 메모장 -->
-      <aside>
-        <div class="sidepannel">메모장으로 활용...?</div>
-        <div class="sidepannel">메모장으로 활용...?</div>
-        <div class="sidepannel">메모장으로 활용...?</div>
-        <div class="sidepannel">메모장으로 활용...?</div>
-        <div class="sidepannel">메모장으로 활용...?</div>
-        <div class="sidepannel">메모장으로 활용...?</div>
-        <div class="sidepannel">메모장으로 활용...?</div>
-      </aside>
-
-      <section class="loadPage">
-        <div class="contents">
-          //내용이 표시되는 공간입니다.// <br>
-          //사이드바에서 클릭해주세요.//
-        </div>
-      </section>
-    </main>
+    <!-- Title -->
+    <div class="Title">
+      <h1 class="mainTitle">GWNU</h1>
+      <div class="subTitle">Mechanical Engineering</div>
+      <div class="subTitle">20211562 오석준</div>
+    </div>
   </div>
+  <!-- main -->
+  <div class="main">
+    <!-- sidebar -->
+    <div class="side-bar">
+      <!-- open -->
+      <button class="side-bar-open-btn">
+        <i class="fa-regular fa-bars"></i>
+      </button>
+      <div class="side-bar-contents">
+        <!-- close -->
+        <button class="side-bar-close-btn">
+          <i class="fa-regular fa-x"></i>
+        </button>
+        <!-- dropdown -->
+        <div class="dropdown">
+          <button class="dropdown-name">홈페이지</button>
+          <ul class="dropdown-contents">
+            <a href="https://www.gwnu.ac.kr/sites/kor/index.do" target="_blank"><li>강릉원주대 공식 홈페이지</li></a>
+            <a href="https://portal.gwnu.ac.kr/user/login.face?ssoReturn=http://lms.gwnu.ac.kr/index.jsp" target="_blank"><li>해람인의 e참뜰</li></a>
+            <a href="https://portal.gwnu.ac.kr/user/login.face?destination=/portal/default/stu_main" target="_blank"><li>포털</li></a>
+            <a href="https://everytime.kr" target="_blank"><li>에타</li></a>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-name">수강신청</button>
+          <ul class="dropdown-contents">
+            <a href="https://sugang.gwnu.ac.kr"target="_blank"><li>수강신청 페이지</li></a>
+            <a href="http://time.navyism.com/?host=www.gwnu.ac.kr" target="_blank"><li>네이비즘</li></a>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-name">자격증</button>
+          <ul class="dropdown-contents">
+            <a href="#"><li>초경량비행장치</li></a>
+            <a href="#"><li>정보처리기능사</li></a>
+            <a href="#"><li>컴퓨터활용능력</li></a>
+            <a href="#"><li>정보기술자격(ITQ)</li></a>
+            <a href="#"><li>한국사능력검정시험</li></a>
+            <a href="#"><li>워드프로세서</li></a>
+            <a href="#"><li>토익</li></a>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-name">각종 페이지</button>
+          <ul class="dropdown-contents">
+            <a href="https://typed.do/login" target="_blank"><li>Typed</li></a>
+            <a href="https://accounts.malangmalang.com/sign/in?redirect=https%3A%2F%2Fspace.malangmalang.com%2Fdrive" target="_blank"><li>한컴스페이스</li></a>
+            <a href="https://calendar.google.com/calendar/u/0/r" target="_blank"><li>구글캘린더</li></a>
+            <a href="https://www.instagram.com/?hl=ko" target="_blank"><li>인스타</li></a>
+            <a href="https://github.com" target="_blank"><li>GitHub</li></a>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-name">메뉴</button>
+          <ul class="dropdown-contents">
+            <a href="#"><li>과제</li></a>
+            <a href="#"><li>시험</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- main contents -->
+    <div class="main-contents">
+      <div class="container">
+        <p>주의사항</p>
+        <p>HIGH</p>
+      </div>
+    </div>
+    <!-- note pad -->
+    <div class="note-pad">
+      <div class="container">
+        <p>메모장</p>
+        <p>시간표</p>
+        <p>위치</p>
+      </div>
+    </div>
+    <!-- load contents -->
+    <div class="load-contents">
+      <div class="container">
+        <p>//컨텐츠가 바뀌는 공간입니다.//</p>
+        <p>//사이드바의 메뉴에서 클릭해주세요.//</p>
+      </div>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="./assets/js/sidebar.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/clock.js"></script>
+  <script src="./assets/js/readFile.js"></script>
 </body>
 </html>
