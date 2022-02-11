@@ -1,0 +1,8 @@
+.middle-exam > button, .last-exam > button {
+  color: white;
+  font-size: 20px;
+  margin: 20px 20px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
