@@ -3,7 +3,7 @@ const close = document.querySelector('.side-bar-close-btn');
 const sideBar = document.querySelector('.side-bar-contents');
 
 //open
-open.addEventListener('click', function(){
+document.querySelector('.side-bar-open-btn').addEventListener('click', function(){
   sideBar.style.left = "0";
 })
 

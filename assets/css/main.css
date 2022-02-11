@@ -26,6 +26,10 @@
   margin-bottom: 10px;
 }
 
+.mainTitle > a {
+  color: white;
+}
+
 .subTitle {
   margin-bottom: 5px;
 }
