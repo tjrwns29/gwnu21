@@ -1,7 +1,25 @@
-.assignment > button {
+.assignmentBtn > button {
   font-size: 20px;
   margin-right: 20px;
   border: 1px solid black;
   padding: 10px;
   border-radius: 10px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.assignment {
+  text-align: start;
+}
+.assignmentTitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.assignmentBack {
+  font-size: 15px;
+  cursor: pointer;
+}
+.assignmentContents > li {
+  margin-left: 60px;
+  margin-bottom: 10px;
 }

@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="./assets/css/menu/exam.css">
   <!-- high CSS -->
   <link rel="stylesheet" href="./assets/css/high.css">
+  <!-- certification CSS -->
+  <link rel="stylesheet" href="./assets/css/certification.css">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/b7e97aa5c8.js" crossorigin="anonymous"></script>
   <title>GWNU</title>
@@ -32,7 +34,7 @@
         <div class="mainTitle"><a href="./index.html">GWNU</a></div>
         <div class="subTitle">Mechanical Engineering</div>
         <div class="subTitle">20211562 오석준</div>
-        <div class="loadPageReset" onclick="innerPage('./loadPageReset')">loadPage Reset</div>
+        <div class="loadPageReset" onclick="innerPage('./innerPage/loadPageReset')">loadPage Reset</div>
       </div>
     </header>
   <!-- nav -->
@@ -56,18 +58,7 @@
             <a href="http://time.navyism.com/?host=www.gwnu.ac.kr" target="_blank"><li>네이비즘</li></a>
           </ul>
         </div>
-        <div class="dropDown">
-          <button class="dropDownName">자격증</button>
-          <ul class="dropDownContents">
-            <a href="./Certification/Drone.html"><li>초경량비행장치</li></a>
-            <a href="./Certification/CraftsmanInformationProcessing.html"><li>정보처리기능사</li></a>
-            <a href="./Certification/computer.html"><li>컴퓨터활용능력</li></a>
-            <a href="./Certification/ITQ.html"><li>정보기술자격</li></a>
-            <a href="./Certification/koreanhi.html"><li>한국사능력검정시험</li></a>
-            <a href="./Certification/wordProcessor.html"><li>워드프로세서</li></a>
-            <a href="./Certification/toeic.html"><li>토익</li></a>
-          </ul>
-        </div>
+        <button onclick="innerPage('./innerPage/certification/certification')" class="dropDownName">자격증</button>
         <div class="dropDown">
           <button class="dropDownName">페이지</button>
           <ul class="dropDownContents">
@@ -81,8 +72,8 @@
         <div class="dropDown">
           <button class="dropDownName">메뉴</button>
           <ul class="dropDownContents">
-            <a onclick="innerPage('./assets/menu/assignment')"><li>과제</li></a>
-            <a onclick="innerPage('./assets/menu/exam')"><li>시험</li></a>
+            <a onclick="innerPage('./innerPage/menu/assignment')"><li>과제</li></a>
+            <a onclick="innerPage('./innerPage/menu/exam')"><li>시험</li></a>
           </ul>
         </div>
       </div>
@@ -90,20 +81,20 @@
     <main class="mainContents">
       <div class="mainConTitle">HIGH</div>
       <div class="highContents">
-        <button onclick="innerPage('./assets/high/직업적성검사')">직업적성검사</button>
-        <button onclick="innerPage('./assets/high/슬기로운연애생활')">슬기로운 연애생활</button>
-        <button onclick="innerPage('./assets/high/스토킹')">스토킹 및 가정폭력</button>
-        <button onclick="innerPage('./assets/high/2대폭력')">2대폭력 및 중독예방교육</button>
-        <button onclick="innerPage('./assets/high/공기업')">공기업 취업 준비</button>
-        <button onclick="innerPage('./assets/high/장애인인식')">장애인 인식 개선 교육</button>
-        <button onclick="innerPage('./assets/high/AI과정')">AI과정 특강</button>
+        <button onclick="innerPage('./innerPage/high/직업적성검사')">직업적성검사</button>
+        <button onclick="innerPage('./innerPage/high/슬기로운연애생활')">슬기로운 연애생활</button>
+        <button onclick="innerPage('./innerPage/high/스토킹')">스토킹 및 가정폭력</button>
+        <button onclick="innerPage('./innerPage/high/2대폭력')">2대폭력 및 중독예방교육</button>
+        <button onclick="innerPage('./innerPage/high/공기업')">공기업 취업 준비</button>
+        <button onclick="innerPage('./innerPage/high/장애인인식')">장애인 인식 개선 교육</button>
+        <button onclick="innerPage('./innerPage/high/AI과정')">AI과정 특강</button>
       </div>
     </main>
     <aside class="loadPage">
       <div class="loadPageTitle">loadPage</div>
       <div class="loadPageContents">
         //페이지가 로드되는 공간입니다.// <br>
-        //메뉴, HIGH, NOTE에서 클릭해주세요.//
+        //"메뉴, HIGH, NOTE, 자격증"에서 클릭해주세요.//
       </div>
     </aside>
     <article class="notePad">
@@ -125,5 +116,6 @@
   <script src="./assets/js/clock.js"></script>
   <script src="./assets/js/readFile.js"></script>
   <script src="./assets/js/loadPageReset.js"></script>
+  <script src="./assets/js/dDay.js"></script>
 </body>
 </html>

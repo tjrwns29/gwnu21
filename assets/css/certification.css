@@ -1,0 +1,64 @@
+.certificationList {
+  padding: 10px 10px 10px 10px;
+}
+.certificationList > button {
+  width: 60%;
+  font-size: 17px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.certificaionBack {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* drone */
+.drone {
+  text-align: start;
+}
+.droneTitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#count {
+  font-size: 16px;
+  margin-bottom: 5px;
+  background-color: #ddbea9;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+.droneNowStateTitle {
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  width: 30%;
+  margin: 0 auto 20px auto;
+}
+.droneNowStateContents {
+  margin-bottom: 15px;
+}
+.droneNowStateContents > li {
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+.droneContents {
+  text-align: center;
+}
+.droneContents > button {
+  width: 50%;
+  font-size: 17px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+.droneCalendarTitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}

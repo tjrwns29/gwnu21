@@ -5,3 +5,36 @@
   padding: 10px;
   border-radius: 10px;
 }
+
+.assignmentBack {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* initial */
+.initialExam {
+  text-align: start;
+}
+.initialExamTitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.initialExamContents > li {
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+
+/* final */
+.finalExam {
+  text-align: start;
+}
+.finalExamTitle {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.finalExamContents > li {
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
