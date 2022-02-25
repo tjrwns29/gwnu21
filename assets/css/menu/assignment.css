@@ -1,8 +1,7 @@
 .assignment > button {
-  color: white;
   font-size: 20px;
   margin-right: 20px;
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 10px;
   border-radius: 10px;
 }

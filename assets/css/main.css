@@ -1,0 +1,162 @@
+/* header */
+.mainHeader {
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+.mainHeader:nth-child(1) {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+.nowTime {
+  padding: 10px 10px;
+  background-color: #001219;
+  color: white;
+  font-size: 17px;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+.Title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.mainTitle {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.loadPageReset {
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* sideBar */
+@media screen and (min-width: 1024px) {
+  .sideBar {
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+  }
+  .sideBar:nth-child(2) {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
+  .dropDown {
+    display: inline-block;
+  }
+  .dropDownName {
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+  }
+  .dropDownContents {
+    text-align: left;
+    position: absolute;
+    display: none;
+    background-color: #ddbea9;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+  }
+  .dropDownContents > a > li {
+    margin: 10px 5px;
+    cursor: pointer;
+  }
+  .dropDown:hover .dropDownContents{
+    display: block;
+  }
+  .sideBarOpenBtn {
+    display: none;
+  }
+  .sideBarCloseBtn {
+    display: none;
+  }
+}
+
+/* main */
+.mainContents {
+  padding: 10px 10px 10px 10px;
+  border-right: 2px solid black;
+}
+.mainContents:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.mainConTitle {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.highContents > button {
+  width: 90%;
+  font-size: 17px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+/* loadPage */
+.loadPage {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+.loadPage:nth-child(5) {
+  grid-column: 3;
+  grid-row: 3;
+}
+.loadPageTitle {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+/* notePad */
+.notePad {
+  padding: 10px 10px 10px 10px;
+  border-left: 2px solid black;
+}
+.notePad:nth-child(4) {
+  grid-column: 2;
+  grid-row: 3;
+}
+.notePadTitle {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+.highNote {
+  width: 30%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.notePadContents > li {
+  margin-bottom: 5px;
+}
+
+
+/* footer */
+.mainFooter {
+  border-top: 2px solid black;
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  padding: 20px 10px;
+}
+.mainFooter:nth-child(6) {
+  grid-column: 1 / span 4;
+  grid-row: 4;
+}
+.copyLeft {
+  margin-top: 50px;
+  opacity: .4;
+}

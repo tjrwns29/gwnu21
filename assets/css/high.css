@@ -1,0 +1,13 @@
+.highContents {
+  text-align: start;
+}
+.popUpTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.popUpMainContents {
+  margin-left: 40px;
+}
+.popUpMainContents > li {
+  margin-bottom: 10px;
+}

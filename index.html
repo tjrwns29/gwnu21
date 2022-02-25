@@ -6,38 +6,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/htmlincludejs"></script>
   <!-- CSS -->
   <!-- css 초기설정 -->
   <link rel="stylesheet" href="./assets/css/reset.css">
-  <!-- index.html css -->
-  <link rel="stylesheet" href="./assets/css/index/main.css">
-  <link rel="stylesheet" href="./assets/css/index/header.css">
-  <link rel="stylesheet" href="./assets/css/index/side-bar.css">
-  <link rel="stylesheet" href="./assets/css/index/main-contents.css">
-  <link rel="stylesheet" href="./assets/css/index/note-pad.css">
-  <link rel="stylesheet" href="./assets/css/index/load-contents.css">
-  <!-- menu css -->
+  <!-- index CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- menu CSS -->
   <link rel="stylesheet" href="./assets/css/menu/assignment.css">
   <link rel="stylesheet" href="./assets/css/menu/exam.css">
+  <!-- high CSS -->
+  <link rel="stylesheet" href="./assets/css/high.css">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/b7e97aa5c8.js" crossorigin="anonymous"></script>
   <title>GWNU</title>
 </head>
 <body>
   <!-- header -->
-  <div class="header"></div>
-  <!-- main -->
-  <div class="main">
-    <!-- sidebar -->
-    <div class="side-bar"></div>
-    <!-- main contents -->
-    <div class="main-contents"></div>
-    <!-- note pad -->
-    <div class="note-pad"></div>
-    <!-- load contents -->
-    <div class="load-contents"></div>
+  <div class="gridContainer">
+    <header class="mainHeader">
+      <div class="nowTime">
+        <div id="clock"></div>
+      </div>
+      <div class="Title">
+        <div class="mainTitle"><a href="./index.html">GWNU</a></div>
+        <div class="subTitle">Mechanical Engineering</div>
+        <div class="subTitle">20211562 오석준</div>
+        <div class="loadPageReset" onclick="innerPage('./loadPageReset')">loadPage Reset</div>
+      </div>
+    </header>
+  <!-- nav -->
+    <nav class="sideBar">
+      <button class="sideBarOpenBtn">open</button>
+      <div class="sideBarContents">
+        <button class="sideBarCloseBtn">close</button>
+        <div class="dropDown">
+          <button class="dropDownName">홈페이지</button>
+          <ul class="dropDownContents">
+            <a href="https://www.gwnu.ac.kr/sites/kor/index.do" target="_blank"><li>홈페이지</li></a>
+            <a href="https://lms.gwnu.ac.kr/?epTicket=ST-595221-HPysBVT9a5Ln3XCixCYRHflnomqgShF3pi3-32" target="_blank"><li>해람인의 e참뜰</li></a>
+            <a href="https://portal.gwnu.ac.kr/portal/default/stu_main" target="_blank"><li>포털</li></a>
+            <a href="https://everytime.kr" target="_blank"><li>에타</li></a>
+          </ul>
+        </div>
+        <div class="dropDown">
+          <button class="dropDownName">수강신청</button>
+          <ul class="dropDownContents">
+            <a href="https://sugang.gwnu.ac.kr" target="_blank"><li>수강신청</li></a>
+            <a href="http://time.navyism.com/?host=www.gwnu.ac.kr" target="_blank"><li>네이비즘</li></a>
+          </ul>
+        </div>
+        <div class="dropDown">
+          <button class="dropDownName">자격증</button>
+          <ul class="dropDownContents">
+            <a href="./Certification/Drone.html"><li>초경량비행장치</li></a>
+            <a href="./Certification/CraftsmanInformationProcessing.html"><li>정보처리기능사</li></a>
+            <a href="./Certification/computer.html"><li>컴퓨터활용능력</li></a>
+            <a href="./Certification/ITQ.html"><li>정보기술자격</li></a>
+            <a href="./Certification/koreanhi.html"><li>한국사능력검정시험</li></a>
+            <a href="./Certification/wordProcessor.html"><li>워드프로세서</li></a>
+            <a href="./Certification/toeic.html"><li>토익</li></a>
+          </ul>
+        </div>
+        <div class="dropDown">
+          <button class="dropDownName">페이지</button>
+          <ul class="dropDownContents">
+            <a href="https://typed.do/login" target="_blank"><li>Typed</li></a>
+            <a href="https://space.malangmalang.com/drive" target="_blank"><li>한컴스페이스</li></a>
+            <a href="https://calendar.google.com/calendar/u/0/r" target="_blank"><li>calendar</li></a>
+            <a href="https://www.instagram.com/?hl=ko" target="_blank"><li>instagram</li></a>
+            <a href="https://github.com" target="_blank"><li>GitHub</li></a>
+          </ul>
+        </div>
+        <div class="dropDown">
+          <button class="dropDownName">메뉴</button>
+          <ul class="dropDownContents">
+            <a onclick="innerPage('./assets/menu/assignment')"><li>과제</li></a>
+            <a onclick="innerPage('./assets/menu/exam')"><li>시험</li></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="mainContents">
+      <div class="mainConTitle">HIGH</div>
+      <div class="highContents">
+        <button onclick="innerPage('./assets/high/직업적성검사')">직업적성검사</button>
+        <button onclick="innerPage('./assets/high/슬기로운연애생활')">슬기로운 연애생활</button>
+        <button onclick="innerPage('./assets/high/스토킹')">스토킹 및 가정폭력</button>
+        <button onclick="innerPage('./assets/high/2대폭력')">2대폭력 및 중독예방교육</button>
+        <button onclick="innerPage('./assets/high/공기업')">공기업 취업 준비</button>
+        <button onclick="innerPage('./assets/high/장애인인식')">장애인 인식 개선 교육</button>
+        <button onclick="innerPage('./assets/high/AI과정')">AI과정 특강</button>
+      </div>
+    </main>
+    <aside class="loadPage">
+      <div class="loadPageTitle">loadPage</div>
+      <div class="loadPageContents">
+        //페이지가 로드되는 공간입니다.// <br>
+        //메뉴, HIGH, NOTE에서 클릭해주세요.//
+      </div>
+    </aside>
+    <article class="notePad">
+      <div class="notePadTitle">NOTE</div>
+      <h3 class="highNote">HIGH</h3>
+      <div class="notePadContents">
+        <li>졸업 가능 체인지 시간 : 20시간 확보(필수)</li>
+        <li>체인지 200시간 채우면 40만원 줌</li>
+        <li>현재 체인지시간 : 19시간</li>
+      </div>
+    </article>
+    <footer class="mainFooter">
+      <div class="eMail">e-mail : ksh730506@naver.com</div>
+      <div class="instagram">instagram : weather.overcast</div>
+      <div class="copyLeft">copyright 2022 by seokjun</div>
+    </footer>
   </div>
   <!-- script -->
-  <script src="./assets/js/loadFile.js"></script>
+  <script src="./assets/js/clock.js"></script>
+  <script src="./assets/js/readFile.js"></script>
+  <script src="./assets/js/loadPageReset.js"></script>
 </body>
 </html>

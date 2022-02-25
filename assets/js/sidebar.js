@@ -1,13 +1,11 @@
-const open = document.querySelector('.side-bar-open-btn');
-const close = document.querySelector('.side-bar-close-btn');
-const sideBar = document.querySelector('.side-bar-contents');
+const sideBar = document.querySelector('.sideBarContents');
 
 //open
-document.querySelector('.side-bar-open-btn').addEventListener('click', function(){
+document.querySelector('.sideBarOpenBtn').addEventListener('click', function(){
   sideBar.style.left = "0";
 })
 
 //close
-close.addEventListener('click', function(){
+document.querySelector('.sideBarCloseBtn').addEventListener('click', function(){
   sideBar.style.left = "-600px";
 })
