@@ -7,5 +7,5 @@ document.querySelector('.sideBarOpenBtn').addEventListener('click', function(){
 
 //close
 document.querySelector('.sideBarCloseBtn').addEventListener('click', function(){
-  sideBar.style.left = "-600px";
+  sideBar.style.left = "-300px";
 })

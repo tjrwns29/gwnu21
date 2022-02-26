@@ -1,39 +1,38 @@
-/* header */
-.mainHeader {
-  border-bottom: 2px solid black;
-  text-align: center;
-}
-.mainHeader:nth-child(1) {
-  grid-column: 1 / span 4;
-  grid-row: 1;
-}
-.nowTime {
-  padding: 10px 10px;
-  background-color: #001219;
-  color: white;
-  font-size: 17px;
-  position: fixed;
-  left: 0;
-  width: 100%;
-}
-.Title {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-.mainTitle {
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-.loadPageReset {
-  margin-top: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  border: 1px solid black;
-  display: inline-block;
-  padding: 5px;
-  border-radius: 10px;
-}
-
+  /* header */
+  .mainHeader {
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+  .mainHeader:nth-child(1) {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+  .nowTime {
+    padding: 10px 10px;
+    background-color: #001219;
+    color: white;
+    font-size: 17px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+  .Title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .mainTitle {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .loadPageReset {
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+  }
 /* Mobile sideBar */
 @media screen and (min-width: 320px) and (max-width: 1023px) {
   .sideBar {
@@ -51,16 +50,16 @@
   .sideBarCloseBtn {
     font-size: 30px;
     margin-bottom: 20px;
-    margin-left: 95%;
+    margin-left: 93%;
   }
   .sideBarContents {
     position: fixed;
     top: 0;
     background-color: white;
-    width: 600px;
+    width: 300px;
     height: 1000px;
     transition: .5s;
-    left: -600px;
+    left: -300px;
   }
   .dropDownName {
     font-size: 20px;
@@ -80,11 +79,44 @@
     margin-bottom: 15px;
     margin-left: 15px;
   }
+  .loadPage {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
   .mainContents {
     display: none;
   }
-  .loadPage {
-    grid-column: 1 / span 3;
+  .notePad {
+    display: none;
+  }
+  .mainFooter:nth-child(6) {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+  }
+  .notePadMobile {
+    display: block;
+    text-align: start;
+    margin-left: 20px;
+  }
+  .notePadTitle {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+  }
+  .highNote {
+    width: 30%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+  .notePadContents > li {
+    margin-bottom: 5px;
+  }
+  .dropDownNameNotePad {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -134,75 +166,76 @@
   .notePadSideBar {
     display: none;
   }
+  /* main */
+  .mainContents {
+    padding: 10px 10px 10px 10px;
+    border-right: 2px solid black;
+  }
+  .mainContents:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .mainConTitle {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+  .highContents > button {
+    width: 90%;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 10px;
+  }
+  
+  /* notePad */
+  .notePad {
+    padding: 10px 10px 10px 10px;
+    border-left: 2px solid black;
+  }
+  .notePad:nth-child(4) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .notePadTitle {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+  }
+  .highNote {
+    width: 30%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+  .notePadContents > li {
+    margin-bottom: 5px;
+  }
+  .dropDownNameNotePad {
+    display: none;
+  }
 }
 
-/* main */
-.mainContents {
-  padding: 10px 10px 10px 10px;
-  border-right: 2px solid black;
-}
-.mainContents:nth-child(3) {
-  grid-column: 1;
-  grid-row: 3;
-}
-.mainConTitle {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
-}
-.highContents > button {
-  width: 90%;
-  font-size: 17px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 10px 10px;
-}
-
-/* loadPage */
-.loadPage {
-  text-align: center;
-  padding: 10px 10px 10px 10px;
-}
-.loadPage:nth-child(5) {
-  grid-column: 3;
-  grid-row: 3;
-}
-.loadPageTitle {
-  margin: 0 auto;
-  text-align: center;
-  width: 70%;
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
-}
-
-/* notePad */
-.notePad {
-  padding: 10px 10px 10px 10px;
-  border-left: 2px solid black;
-}
-.notePad:nth-child(4) {
-  grid-column: 2;
-  grid-row: 3;
-}
-.notePadTitle {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-  border-bottom: 1px solid black;
-  margin-bottom: 30px;
-}
-.highNote {
-  width: 30%;
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
-}
-.notePadContents > li {
-  margin-bottom: 5px;
-}
-
+  /* loadPage */
+  .loadPage {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  }
+  .loadPage:nth-child(5) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .loadPageTitle {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
 
 /* footer */
 .mainFooter {
