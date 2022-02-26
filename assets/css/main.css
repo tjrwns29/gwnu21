@@ -34,7 +34,61 @@
   border-radius: 10px;
 }
 
-/* sideBar */
+/* Mobile sideBar */
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .sideBarOpenBtn {
+    font-size: 20px;
+    z-index: 1212;
+    background-color: white;
+    padding: 2px 7px 7px 7px;
+    border-radius: 20px;
+  }
+  .sideBarCloseBtn {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 95%;
+  }
+  .sideBarContents {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 600px;
+    height: 1000px;
+    transition: .5s;
+    left: -600px;
+  }
+  .dropDownName {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  .dropDownContents > a > li {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .dropDownContents {
+    display: none;
+  }
+  .dropDownNameHigh {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  .mainContents {
+    display: none;
+  }
+  .loadPage {
+    grid-column: 1 / span 3;
+  }
+}
+
+/* Desktop sideBar */
 @media screen and (min-width: 1024px) {
   .sideBar {
     border-bottom: 2px solid black;
@@ -72,6 +126,12 @@
     display: none;
   }
   .sideBarCloseBtn {
+    display: none;
+  }
+  .dropDownNameHigh {
+    display: none;
+  }
+  .notePadSideBar {
     display: none;
   }
 }
@@ -154,9 +214,8 @@
 }
 .mainFooter:nth-child(6) {
   grid-column: 1 / span 4;
-  grid-row: 4;
+  grid-row: 5;
 }
-.copyLeft {
+.copyRight {
   margin-top: 50px;
-  opacity: .4;
 }

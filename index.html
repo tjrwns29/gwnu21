@@ -39,9 +39,9 @@
     </header>
   <!-- nav -->
     <nav class="sideBar">
-      <button class="sideBarOpenBtn">open</button>
+      <button class="sideBarOpenBtn">=</button>
       <div class="sideBarContents">
-        <button class="sideBarCloseBtn">close</button>
+        <button class="sideBarCloseBtn">X</button>
         <div class="dropDown">
           <button class="dropDownName">홈페이지</button>
           <ul class="dropDownContents">
@@ -74,6 +74,18 @@
           <ul class="dropDownContents">
             <a onclick="innerPage('./innerPage/menu/assignment')"><li>과제</li></a>
             <a onclick="innerPage('./innerPage/menu/exam')"><li>시험</li></a>
+          </ul>
+        </div>
+        <div class="dropDown">
+          <button class="dropDownNameHigh">HIGH</button>
+          <ul class="dropDownContents">
+            <a><li onclick="innerPage('./innerPage/high/직업적성검사')">직업적성검사</li></a>
+            <a><li onclick="innerPage('./innerPage/high/슬기로운연애생활')">슬기로운 연애생활</li></a>
+            <a><li onclick="innerPage('./innerPage/high/스토킹')">스토킹 및 가정폭력</li></a>
+            <a><li onclick="innerPage('./innerPage/high/2대폭력')">2대폭력 및 중독예방교육</li></a>
+            <a><li onclick="innerPage('./innerPage/high/공기업')">공기업 취업 준비</li></a>
+            <a><li onclick="innerPage('./innerPage/high/장애인인식')">장애인 인식 개선 교육</li></a>
+            <a><li onclick="innerPage('./innerPage/high/AI과정')">AI과정 특강</li></a>
           </ul>
         </div>
       </div>
@@ -109,7 +121,7 @@
     <footer class="mainFooter">
       <div class="eMail">e-mail : ksh730506@naver.com</div>
       <div class="instagram">instagram : weather.overcast</div>
-      <div class="copyLeft">copyright 2022 by seokjun</div>
+      <div class="copyRight">copyright 2022 by seokjun</div>
     </footer>
   </div>
   <!-- script -->
@@ -117,5 +129,7 @@
   <script src="./assets/js/readFile.js"></script>
   <script src="./assets/js/loadPageReset.js"></script>
   <script src="./assets/js/dDay.js"></script>
+  <script src="./assets/js/dropDown.js"></script>
+  <script src="./assets/js/sidebar.js"></script>
 </body>
 </html>
