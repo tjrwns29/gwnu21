@@ -1,13 +1,15 @@
-$(document).ready(function(){
-  $(".dropDownName").on("click", function(){
-      // this : 이벤트가 발생환 주체
-    $(this).next('.dropDownContents').slideToggle(400)
-  })
-})
+if (matchMedia("screen and (min-width: 320px) and (max-width: 1023px)").matches) {
+  // 드롭다운 메뉴
+    $(document).ready(function(){
+        $('.dropDownName').on("click", function(){
+          $(this).next('.dropDownContents').slideToggle(400)
+        })
+    })
 
-$(document).ready(function(){
-  $(".dropDownNameHigh").on("click", function(){
-      // this : 이벤트가 발생환 주체
-    $(this).next('.dropDownContents').slideToggle(400)
+  // 모바일 highMenu
+  $(document).ready(function(){
+    $(".dropDownNameHigh").on("click", function(){
+      $(this).next('.dropDownContents').slideToggle(400)
+    })
   })
-})
+}

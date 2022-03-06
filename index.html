@@ -39,11 +39,11 @@
     </header>
   <!-- nav -->
     <nav class="sideBar">
-      <button class="sideBarOpenBtn">=</button>
+      <button class="sideBarOpenBtn"><i class="fa-solid fa-align-left"></i></button>
       <div class="sideBarContents">
-        <button class="sideBarCloseBtn">X</button>
+        <button class="sideBarCloseBtn"><i class="fa-solid fa-xmark"></i></button>
         <div class="dropDown">
-          <button class="dropDownName">홈페이지</button>
+          <button class="dropDownName" onclick="downContents('.dropDownName')">홈페이지 <i class="fa-solid fa-angle-down dropDownFontAweSome"></i></button>
           <ul class="dropDownContents">
             <a href="https://www.gwnu.ac.kr/sites/kor/index.do" target="_blank"><li>홈페이지</li></a>
             <a href="https://lms.gwnu.ac.kr/?epTicket=ST-595221-HPysBVT9a5Ln3XCixCYRHflnomqgShF3pi3-32" target="_blank"><li>해람인의 e참뜰</li></a>
@@ -52,7 +52,7 @@
           </ul>
         </div>
         <div class="dropDown">
-          <button class="dropDownName">수강신청</button>
+          <button class="dropDownName">수강신청 <i class="fa-solid fa-angle-down dropDownFontAweSome"></i></button>
           <ul class="dropDownContents">
             <a href="https://sugang.gwnu.ac.kr" target="_blank"><li>수강신청</li></a>
             <a href="http://time.navyism.com/?host=www.gwnu.ac.kr" target="_blank"><li>네이비즘</li></a>
@@ -60,7 +60,7 @@
         </div>
         <button onclick="innerPage('./innerPage/certification/certification')" class="dropDownName">자격증</button>
         <div class="dropDown">
-          <button class="dropDownName">페이지</button>
+          <button class="dropDownName">페이지 <i class="fa-solid fa-angle-down dropDownFontAweSome"></i></button>
           <ul class="dropDownContents">
             <a href="https://typed.do/login" target="_blank"><li>Typed</li></a>
             <a href="https://space.malangmalang.com/drive" target="_blank"><li>한컴스페이스</li></a>
@@ -70,14 +70,14 @@
           </ul>
         </div>
         <div class="dropDown">
-          <button class="dropDownName">메뉴</button>
+          <button class="dropDownName">메뉴 <i class="fa-solid fa-angle-down dropDownFontAweSome"></i></button>
           <ul class="dropDownContents">
             <a onclick="innerPage('./innerPage/menu/assignment')"><li>과제</li></a>
             <a onclick="innerPage('./innerPage/menu/exam')"><li>시험</li></a>
           </ul>
         </div>
         <div class="dropDown">
-          <button class="dropDownNameHigh">High</button>
+          <button class="dropDownNameHigh">High <i class="fa-solid fa-angle-down dropDownFontAweSome"></i></button>
           <ul class="dropDownContents">
             <a><li onclick="innerPage('./innerPage/high/직업적성검사')">직업적성검사</li></a>
             <a><li onclick="innerPage('./innerPage/high/슬기로운연애생활')">슬기로운 연애생활</li></a>
@@ -118,13 +118,22 @@
         <li>체인지 200시간 채우면 40만원 줌</li>
         <li>현재 체인지시간 : 19시간</li>
       </div>
+      <h3 class="highNote">기계공작법</h3>
+      <div class="notePadContents">
+        <p>1. 테마선정</p>
+        <li>실시 기간 : 3월 14일 ~ 3월 31일 (*테마 선점을 위해서는 일찍 주제를 잡는 것이 유리함.^^)</li>
+        <li>본 과목과 관련된 최근 뉴스기사, 기술정보, 업체정보 등을 수업커뮤니티게시판(학습활동관리>>토론관리)에 올려야 함. </li>
+        <p>2. 발표</p>
+        <li>실시기간 : 4월 1일 ~ 5월 31일 (교수가 날짜를 개별적으로 할당함)</li>
+        <li>절대로 7분을 넘기지 말 것</li>
+      </div>
     </article>
-    <footer class="mainFooter">
-      <div class="eMail">e-mail : ksh730506@naver.com</div>
-      <div class="instagram">instagram : weather.overcast</div>
-      <div class="copyRight">copyright 2022 by seokjun</div>
-    </footer>
-  </div>
+        <footer class="mainFooter">
+          <div class="eMail">e-mail : ksh730506@naver.com</div>
+          <div class="instagram">instagram : weather.overcast</div>
+          <div class="copyRight">copyright 2022 by seokjun</div>
+        </footer>
+      </div>
   <!-- script -->
   <script src="./assets/js/clock.js"></script>
   <script src="./assets/js/readFile.js"></script>
